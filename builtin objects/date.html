@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Date</title>
+        <script>
+            function continuousDisplay(){
+                setInterval(displayDate,1000);
+            }
+            function displayDate(){
+                var a=new Date();
+                // document.write(a);
+                document.getElementById("dateinfo").innerHTML=a;
+                var b=a.toLocaleDateString();
+                var c=a.toLocaleTimeString();
+                //document.getElementById("dateinfo").innerHTML=b;
+                //document.getElementById("dateinfo").innerHTML=c;
+
+            }
+           
+            
+        </script>
+    </head>
+    <body onload="continuousDisplay()">
+        Current Date:<br>
+        <p id="dateinfo"></p>
+    </body>
+</html>
