@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Throw Error </title>
+        <script>
+            function validateAge(){
+                try{
+                    var age=document.getElementById("age").value;
+                    if (age=="")
+                    {
+                        throw "Age cannot be blank";
+                    }
+                    else if(age<18)
+                    {
+                        throw "To young to Vote";
+                    }
+                }catch(obj){
+                    document.getElementById("errorInfo").innerHTML=obj;
+                }
+               
+            }
+        </script>
+    </head>
+    <body>
+        Age : <input type="number" id="age">
+        <button onclick="validateAge()">submit</button>
+        <p id="errorInfo"></p>
+    </body>
+</html>
