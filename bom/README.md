@@ -30,3 +30,13 @@
 
 ## Navigate
     object contains information about the visitor's browser.
+
+    navigator.cookieEnabled : returns true if cookies are enabled, otherwise false
+    navigator.appCodeName : returns the application code name of the browser
+    navigator.platform   :returns the product name of the browser engine
+    navigator.appVersion : returns version information about the browser
+    navigator.userAgent : returns the user-agent header sent by the browser to the server
+    navigator.platform : returns the browser platform (operating system)
+    navigator.language : returns the browser's language
+    navigator.onLine : returns true if the browser is online
+    navigator.javaEnabled : method returns true if Java is enabled
