@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>DOM:Assignment</title>
+        <script>
+            function handleCreate(){
+                var parent=document.getElementById("div1");
+                var child=document.createElement("p");
+                var text=document.createTextNode("TV : 3000$");
+                child.appendChild(text);
+                parent.appendChild(child);
+            }
+            function handleRemove(){
+                var parent_element = document.getElementById("div1");
+                var del_element = document.getElementById("cellphone");
+                parent_element.removeChild(del_element);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="div1">
+            <p id="laptop">
+                <b>Laptop</b> : 1000$
+            </p>
+            <p id="cellphone">
+                <b>Celphone</b> : 300$
+            </p>
+            
+        </div>
+        <button onclick="handleCreate()">Add</button>
+        <button onclick="handleRemove()">Delete</button>
+    </body>
+</html>
