@@ -23,5 +23,10 @@
 
 
 ## History
+    history.back() - same as clicking back in the browser
+                    method loads the previous URL in the history list.
+    history.forward() - same as clicking forward in the browser
+                    method loads the next URL in the history list.
 
 ## Navigate
+    object contains information about the visitor's browser.
