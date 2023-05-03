@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Form Validation Text Fields</title>
+        <script>
+            function handleSubmit(){
+                var email=document.myform.email.value;
+                var password=document.myform.password.value;
+                if(email==""){
+                    alert("enter an Email");
+                    return false;
+                }
+                else if(password==""){
+                    alert("enter an password");
+                    return false;
+                }
+                else{
+                    alert("Validation Successful");
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h3>User Registration</h3>
+        <form name="myform" action="registration.jsp" onSubmit="return handleSubmit()">
+            <label name="email">Email : </label>
+            <input type="text" name="email"><br>
+            <label name="password">Password : </label>
+            <input type="password" name="password"><br>
+            <button>Register</button>
+        </form>
+    </body>
+</html>
