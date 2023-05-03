@@ -7,10 +7,12 @@
                 var password=document.myform.password.value;
                 if(email==""){
                     alert("enter an Email");
+                    document.myform.email.focus();
                     return false;
                 }
                 else if(password==""){
                     alert("enter an password");
+                    document.myform.password.focus();
                     return false;
                 }
                 else{
