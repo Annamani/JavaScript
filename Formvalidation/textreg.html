@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>TextField Validation-RegEx </title>
+	<script>
+		function validate(){
+			var valid = false;
+			var exp = /^[A-Za-z]+$/;	
+            var userName=document.myform.username.value;
+            var result=exp.test(userName);
+
+            if(result){
+                alert("Validation is successful");
+
+            }
+			else{
+                alert("Validation is Failed");
+
+            }
+        }
+	</script>
+
+</head>
+
+<body>
+	<h3>User Registration</h3>
+	<form name="myform" action="dropdown.php" onsubmit="return validate()">
+		<label name="username">User Name : </label>
+        <input type="text" name="username" ><br>
+		
+		
+		<input type="submit" value="submit"/>
+	</form>
+</body>
+
+</html>
