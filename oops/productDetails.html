@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Custom Object Creation using Functions</title>
+        <script>
+            function product(id,name,description,price){
+                this.id=id;
+                this.name=name;
+                this.description=description;
+                this.price = price;
+		        this.displayProductDetails = displayProductDetails;
+                this.calculateDiscount=calculateDiscount;
+                
+            }
+           function calculateDiscount(discount_percentage){
+            return this.price - (this.price * (discount_percentage/100))
+           }
+           function displayProductDetails(){
+            document.write("Name: "+this.name+"<br>");
+            document.write("Description: "+this.description+"<br>");
+            document.write("Discounted Price: "+this.calculateDiscount(30)+"<br>");
+           }
+           var product1 = new product(1,"TV","Its Awesome",100000);
+	       product1.displayProductDetails();
+           var product2 = new product(2,"Washing Machine","Its Helpful",40000);
+	       product2.displayProductDetails();
+           var product3 = new product(3,"Micro Oven","Its Worthy to buy",30000);
+	       product3.displayProductDetails();
+           
+          
+        </script>
+    </head>
+    <body>
+        
+    </body>
+
+</html> 
