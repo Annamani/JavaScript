@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>CheckBox Validation</title>
+	<script>
+		function handleCheckbox(){
+			var valid=false;
+
+            if(document.getElementById("Telugu").checked){
+                valid=true;
+            }
+            else if(document.getElementById("Hindi").checked){
+                valid=true;
+            }
+            else if(document.getElementById("English").checked){
+                valid=true;
+            }
+            else if(document.getElementById("Danish").checked){
+                valid=true;
+            }
+            else if(document.getElementById("Spanish").checked){
+                valid=true;
+            }
+            else if(document.getElementById("German").checked){
+                valid=true;
+            }
+            else if(document.getElementById("French").checked){
+                valid=true;
+            }
+            
+            if(valid){
+                alert("Selected Successfully");
+            }else{
+                alert("Select atleast one language");
+                return false;
+            }
+            
+
+
+		}
+		
+	</script>
+</head>
+
+<body>
+	<h3>Choose the known languages</h3>
+    <form name="checklist" action="checkbox.php" onsubmit="return handleCheckbox()">
+    <input type="checkbox" id="Telugu" value="Telugu">Telugu<br>
+    <input type="checkbox" id="Hindi" value="Hindi">Hindi<br>
+    <input type="checkbox" id="English" value="English">English<br>
+    <input type="checkbox" id="Danish" value="Danish">Danish<br>
+    <input type="checkbox" id="Spanish" value="Spanish">Spanish<br>
+    <input type="checkbox" id="German" value="German">German<br>
+    <input type="checkbox" id="French" value="French">French<br>
+	
+		<input type="submit" value="submit"/>
+
+	</form>
+</body>
+</html>
