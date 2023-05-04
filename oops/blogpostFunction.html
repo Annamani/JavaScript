@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Custom Object Creation using Functions</title>
+        <script>
+            function blogpost(title,text){
+                this.title=title;
+                this.text=text;
+            }
+            //1st Object creation and calling the function with parameters
+            var bp1=new blogpost("JavaScript","It is awesome!!");
+            document.write(bp1.title+"<br>");
+            document.write(bp1.text+"<br>");
+
+            //2nd Object creation and calling the function with parameters
+            var bp2=new blogpost("HTML","It is great!!");
+            document.write(bp2.title+"<br>");
+            document.write(bp2.text+"<br>");
+
+            //3rd Object creation and calling the function with parameters
+            var bp3=new blogpost("CSS","brings your Creativity Skills!!");
+            document.write(bp3.title+"<br>");
+            document.write(bp3.text+"<br>");
+            
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+
+</html>
