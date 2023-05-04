@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Form Validation -Menu Validation</title>
+	<script>
+		function handleMenu(){
+			var color = document.myform.color.value;
+
+			if(color==""){
+				alert("Please choose a color");
+				document.myform.num.focus();
+				return false;
+			}else{
+				alert("Color is selected successfully");
+				return true;
+			}
+
+
+		}
+		
+	</script>
+</head>
+
+<body>
+	<h3>Select a color</h3>
+    <form name="myform" action="color.php" onsubmit="return handleMenu()">
+    <select name="color" id="">
+        <option value="">choose color</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="pink">Pink</option>
+        <option value="yellow">Yellow</option>
+    </select>
+	
+		<input type="submit" value="submit"/>
+
+	</form>
+
+	
+</body>
+
+</html>
