@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Custom Singleton Object Creation </title>
+        <script>
+
+        // A singleton is a function or class which can have only one instance
+            var blogpost=new function(){
+                this.title="HTML",
+                this.text="Web Technologies",
+                this.displayDetails=function(){
+                    document.write(this.title+"<br>");
+                    document.write(this.text+"<br>");
+                }
+            };
+            blogpost.displayDetails();
+        </script>
+    </head>
+    <body>
+        
+    </body>
+
+</html> 
